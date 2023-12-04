@@ -3,7 +3,7 @@ I recently discovered a National Semiconductor Digitalker IC in my collection. T
 
 Now I'm more confident with using Eagle PCB (v7.7) and producing gerbers for JLCPCB I figured I'd have a go at producing a Digitalker shield for an Arduino UNO.
 
-My main inspiration for this project is a web page published by [Dr. Scott M. Baker]{https://www.smbaker.com/this-is-digitalker-and-jameco-je520-too-vintage-speech-synthesis} and the recent discovery of quite a few Digitalker ROMs that had been uploaded the the [Internet Archive]{https://archive.org/details/digitalker}.
+My main inspiration for this project is a web page published by [Dr. Scott M. Baker](https://www.smbaker.com/this-is-digitalker-and-jameco-je520-too-vintage-speech-synthesis) and the recent discovery of quite a few Digitalker ROMs that had been uploaded the the [Internet Archive](https://archive.org/details/digitalker).
 
 You can read more about the Digitalker chip on Dr Scott Baker's web page.
 
@@ -19,9 +19,13 @@ There's also Chip Select (/CS) which in a minimum configuration can be grounded 
 
 Finally, there is the Write Strobe (/WR) which initiates the generation of the speech on the rising edge.
 
+### Word Selection
+
 The Digitialker chip has 14 address lines (A0..A13) to address up to 16Kbytes of storage. The original speech ROMs had a storage capacity of 8Kbytes each. Address line A13 was used to select the lower or upper ROM. The lower ROM CS signal was acive low whereas the upper ROM CS signal was active high.
 
 I'm using an AM29F040B flash chip with a capacity of 512Kbytes to store the contents of the various speech ROMs.
+
+### interface
 
 I've chosen to use the SPI interface of the ATMEGA328P on the UNO and a couple of 74HCT595 serial-in / parallel-out shift registers to transfer information to the Digitalker chip. One shift register is dedicated to providing the 8-bit word number to speak. The other shift register handles address lines A14..A18 of the flash chip in order to select the pair of speech ROMs required.
 
@@ -29,11 +33,11 @@ I'm using the SPI signals MOSI and SCK from the ICSP header on the UNO rather th
 
 The SPI SS signal is routed to the D10 pin on the UNO and the Write Strobe is routed to the A1 pin on the UNO.   
 
-# Power
+### Power
 
 The Digitalker chip requires a supply voltage of between 7V and 11V. I'm not a power supply designer so I used an off the shelf DC/DC boost module designed around the SDB628 IC and configured its to output 9V.
 
-# Audio
+### Audio
 
 I'm also not an audio designer so I used an off the shelf audio amplifier module - HXJ8002 - to handle the audio.
 
