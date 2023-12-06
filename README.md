@@ -85,6 +85,7 @@ The commands are entered into the Arduino IDE serial monitor. There are only 2 c
 # Further information
 
 Have a look in the datasheets folder for information on the Digitalker chips.
+
 | DT1000 | Speech synthesis evaluation board |
 | DT1050(3) | Standard vocabulary kit - details the words in ROMs SSR1 & SSR2 |
 | DT1051(4) | Speech evaluation kit - details the words in ROMs SSR3 & SSR4 |
