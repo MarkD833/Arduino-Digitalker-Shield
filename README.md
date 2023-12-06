@@ -63,15 +63,15 @@ As a basic check, start with the SSR1 & SSR2 ROMs. The files for these ROMs were
 
 Using a PROM programmer of your choice, load the SSR1.bin file into memory starting at address 0x0000. Next, load the SSR2.bin file but this time you need to make sure that it is loaded into your PROM programmer memory starting at address 0x2000.
 
-The memory map in your PROM programmer should be similar to this:
+The memory map in your PROM programmer should be similar to this if you also want to include the SSR5 & SSR6 ROMs as well:
 
  | ROM Bank | ROM 1 | ROM 2 |
  | -------- | ----- | ----- |
  | 0        | SSR1.bin | SSR2.bin |
- |          | 0000-1FFF | 2000-3FFF |
+ | Addr Range | 0000-1FFF | 2000-3FFF |
  | -------- | ----- | ----- |
  | 1        | SSR5.bin | SSR6.bin |
- |          | 4000-5FFF | 6000-7FFF |
+ | Addr Range | 4000-5FFF | 6000-7FFF |
  | -------- | ----- | ----- |
  
 Then program the flash chip with the loaded data and install it in your board.
