@@ -67,12 +67,8 @@ The memory map in your PROM programmer should be similar to this if you also wan
 
  | ROM Bank | ROM 1 | ROM 2 |
  | -------- | ----- | ----- |
- | 0        | SSR1.bin | SSR2.bin |
- | Addr Range | 0000-1FFF | 2000-3FFF |
- | -------- | ----- | ----- |
- | 1        | SSR5.bin | SSR6.bin |
- | Addr Range | 4000-5FFF | 6000-7FFF |
- | -------- | ----- | ----- |
+ | 0        | SSR1.bin (0000-1FFF) | SSR2.bin (2000-3FFF) |
+ | 1        | SSR5.bin (4000-5FFF) | SSR6.bin (6000-7FFF) |
  
 Then program the flash chip with the loaded data and install it in your board.
 
