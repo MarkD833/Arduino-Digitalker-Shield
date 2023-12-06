@@ -82,6 +82,16 @@ The commands are entered into the Arduino IDE serial monitor. There are only 2 c
 * n : a number, for example - 0, 1 or 25 to speek word or phrase associated with that number
 * Rn : R followed by a number will switch ROM sets - R2 switches to ROM set #2. Any words or phrases will now come from ROM set #2.
 
+# Further information
+
+Have a look in the datasheets folder for information on the Digitalker chips.
+| DT1000 | Speech synthesis evaluation board |
+| DT1050(3) | Standard vocabulary kit - details the words in ROMs SSR1 & SSR2 |
+| DT1051(4) | Speech evaluation kit - details the words in ROMs SSR3 & SSR4 |
+| DT1052(5) | Basic numbers kit |
+| DT1056(7) | Standard vocabulary kit - details the words in ROMs SSR5 & SSR6 |
+| DTSW-500  | Digitalker vocabulary selection system (CP/M 2.2 application) |
+
 ## Version History
 
 * 0.1
