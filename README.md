@@ -1,11 +1,13 @@
 # Arduino UNO National Semiconductor Digitalker Shield
 I recently discovered a National Semiconductor Digitalker IC in my collection. This one is packaged in a yellow box supplied by RS Componenets in the UK. I also have 2 of the Digitalker speech ROMS.
 
+![Yellow boxes](https://github.com/MarkD833/Arduino-Digitalker-Shield/blob/main/images/YellowBoxes.JPG)
+
 Now I'm more confident with using Eagle PCB (v7.7.0) and producing gerbers for JLCPCB I figured I'd have a go at producing a Digitalker shield for an Arduino UNO.
 
 My main inspiration for this project is a web page published by [Dr. Scott M. Baker](https://www.smbaker.com/this-is-digitalker-and-jameco-je520-too-vintage-speech-synthesis) and the recent discovery of quite a few Digitalker ROMs that had been uploaded the the [Internet Archive](https://archive.org/details/digitalker).
 
-You can read more about the Digitalker chip on Dr Scott Baker's web page.
+You can read more about the Digitalker chip on [Dr. Scott M. Baker's](https://www.smbaker.com/this-is-digitalker-and-jameco-je520-too-vintage-speech-synthesis) web page.
 
 ## Description
 
