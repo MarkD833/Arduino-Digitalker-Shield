@@ -93,7 +93,9 @@ Have a look in the datasheets folder for information on the Digitalker chips.
 | DT1051(4) | Speech evaluation kit - details the words in ROMs SSR3 & SSR4 |
 | DT1052(5) | Basic numbers kit |
 | DT1056(7) | Standard vocabulary kit - details the words in ROMs SSR5 & SSR6 |
-| DTSW-500  | Digitalker vocabulary selection system (CP/M 2.2 application) |
+| DTSW-500  | Digitalker vocabulary selection system (DVSS) (CP/M 2.2 application) |
+
+The SSR3 and SSR4 ROMs have yet to be found despite the best searches of other Digitalker enthusiasts. The user manual for the DVSS also is proving elusive. The SSR3 and SSR4 ROMs could potentially be recreated using the DVSS software as the datasheet indicates that the DVSS software includes 500 words that could be used to create custom ROMs.
 
 ## Version History
 
