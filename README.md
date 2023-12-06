@@ -5,6 +5,8 @@ I recently discovered a National Semiconductor Digitalker IC in my collection. T
 
 Now I'm more confident with using Eagle PCB (v7.7.0) and producing gerbers for JLCPCB I figured I'd have a go at producing a Digitalker shield for an Arduino UNO.
 
+![Digitalker Shield](https://github.com/MarkD833/Arduino-Digitalker-Shield/blob/main/images/Board_2.JPG)
+
 My main inspiration for this project is a web page published by [Dr. Scott M. Baker](https://www.smbaker.com/this-is-digitalker-and-jameco-je520-too-vintage-speech-synthesis) and the recent discovery of quite a few Digitalker ROMs that had been uploaded the the [Internet Archive](https://archive.org/details/digitalker).
 
 You can read more about the Digitalker chip on [Dr. Scott M. Baker's](https://www.smbaker.com/this-is-digitalker-and-jameco-je520-too-vintage-speech-synthesis) web page.
@@ -61,6 +63,17 @@ As a basic check, start with the SSR1 & SSR2 ROMs. The files for these ROMs were
 
 Using a PROM programmer of your choice, load the SSR1.bin file into memory starting at address 0x0000. Next, load the SSR2.bin file but this time you need to make sure that it is loaded into your PROM programmer memory starting at address 0x2000.
 
+The memory map in your PROM programmer should be similar to this:
+
+ | ROM Bank | ROM 1 | ROM 2 |
+ | -------- | ----- | ----- |
+ | 0        | SSR1.bin | SSR2.bin |
+ |          | 0000-1FFF | 2000-3FFF |
+ | -------- | ----- | ----- |
+ | 1        | SSR5.bin | SSR6.bin |
+ |          | 4000-5FFF | 6000-7FFF |
+ | -------- | ----- | ----- |
+ 
 Then program the flash chip with the loaded data and install it in your board.
 
 # Speaking the first words
