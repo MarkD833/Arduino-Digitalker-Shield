@@ -35,7 +35,7 @@ I've chosen to use the SPI interface of the ATMEGA328P on the UNO and a couple o
 
 I'm using the SPI signals MOSI and SCK from the ICSP header on the UNO rather than D11 and D13 in the hope that this board can also be used with an Arduino MEGA2560 as well. The SPI signals on the Arduino MEGA2560 board are on completely different pins, but they are also present on the ICSP header in the same physical location as on the UNO.
 
-The SPI SS signal is routed to the D10 pin on the UNO and the Write Strobe is routed to the A1 pin on the UNO.   
+The SPI SS signal is routed to the D10 pin on the UNO and the Write Strobe is routed to the A1 pin on the UNO. The Digitalker chip has an interrupt pin which goes high to tell the host that the chosen word/phrase has been spoken. I've routed this to the A0 pin on the UNO. 
 
 ### Power
 
