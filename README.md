@@ -103,7 +103,9 @@ The user manual for the DVSS also is proving elusive. The SSR3 and SSR4 ROMs cou
 
 I've spent a bit of time with my RC2014 CP/M system and had the chance to experiment with the DVSS software. I've found out how to use it and even how to create my own ROMs for the Digitalker chip to use.
 
-I've put everything I've discovered into a PDF in the datasheets folder. My notes include a walkthrough to create your own custom ROMs.
+I've put everything I've discovered into a [PDF](https://github.com/MarkD833/Arduino-Digitalker-Shield/blob/main/datasheets/DVSS_Adventures_v1.1.pdf) in the datasheets folder. My notes include a walkthrough to create your own custom ROMs.
+
+There doesn't appear to be a way to decompile an existing ROM to create a new library of sounds so the other existing ROMs will have to stay as-is.
 
 ## Version History
 
