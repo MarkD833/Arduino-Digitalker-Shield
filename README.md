@@ -61,7 +61,7 @@ The speech ROMs are generally designed to be used in pairs.
 
 As a basic check, start with the SSR1 & SSR2 ROMs. The files for these ROMs were named SSR1.bin and SSR2.bin in the archive I used.
 
-Using a PROM programmer of your choice, load the SSR1.bin file into memory starting at address 0x0000. Next, load the SSR2.bin file but this time you need to make sure that it is loaded into your PROM programmer memory starting at address 0x2000.
+Using a PROM programmer of your choice, load the SSR1.bin file into memory starting at address 0x0000. Next, load the SSR2.bin file but this time you need to make sure that it is loaded into your PROM programmer memory starting at address 0x2000. Add the SSR5.bin and SSR6.bin files as well if you want to.
 
 The memory map in your PROM programmer should be similar to this if you also want to include the SSR5 & SSR6 ROMs as well:
 
@@ -95,7 +95,15 @@ Have a look in the datasheets folder for information on the Digitalker chips.
 | DT1056(7) | Standard vocabulary kit - details the words in ROMs SSR5 & SSR6 |
 | DTSW-500  | Digitalker vocabulary selection system (DVSS) (CP/M 2.2 application) |
 
-The SSR3 and SSR4 ROMs have yet to be found despite the best searches of other Digitalker enthusiasts. The user manual for the DVSS also is proving elusive. The SSR3 and SSR4 ROMs could potentially be recreated using the DVSS software as the datasheet indicates that the DVSS software includes 500 words that could be used to create custom ROMs.
+The SSR3 and SSR4 ROMs have yet to be found despite the best searches of other Digitalker enthusiasts. However, the DT1051 / DT1054 datasheet does list the phrases that are programmed into the SSR3 and SSR4 ROMs.
+
+The user manual for the DVSS also is proving elusive. The SSR3 and SSR4 ROMs could potentially be recreated using the DVSS software as the datasheet indicates that the DVSS software includes 500 words that could be used to create custom ROMs.
+
+# DVSS software user guide
+
+I've spent a bit of time with my RC2014 CP/M system and had the chance to experiment with the DVSS software. I've found out how to use it and even how to create my own ROMs for the Digitalker chip to use.
+
+I've put everything I've discovered into a PDF in the datasheets folder. My notes include a walkthrough to create your own custom ROMs.
 
 ## Version History
 
