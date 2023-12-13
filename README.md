@@ -105,10 +105,6 @@ I've spent a bit of time with my RC2014 CP/M system and had the chance to experi
 
 I've put everything I've discovered into a [separate repository here](https://github.com/MarkD833/Digitalker-Digital-Voice-Selection-Software).
 
-The PDFs a [PDF](https://github.com/MarkD833/Arduino-Digitalker-Shield/blob/main/datasheets/DVSS_Adventures_v1.1.pdf) in the datasheets folder. My notes include a walkthrough to create your own custom ROMs.
-
-There doesn't appear to be a way to decompile an existing ROM to create a new library of sounds so the other existing ROMs will have to stay as-is.
-
 ## Version History
 
 * 0.1
@@ -122,3 +118,4 @@ This project is licensed under the GNU General Public License v3.0 - see the LIC
 
 Inspiration etc.
 * [Dr. Scott M. Baker](https://www.smbaker.com/this-is-digitalker-and-jameco-je520-too-vintage-speech-synthesis)
+* George de Bouter 
